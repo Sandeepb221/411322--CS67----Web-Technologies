@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CS67 Portfolio | Sandeep MOLLETI</title>
+  <meta name="description" content="CS67 Web Technologies coursework portfolio for Sandeep MOLLETI." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="top">
+    <div class="wrap top-row">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">SM</div>
+        <div class="brand-text">
+          <strong>Sandeep MOLLETI</strong>
+          <span>CS67 Web Technologies — Coursework Portfolio</span>
+        </div>
+      </div>
+
+      <button class="menu-btn" id="menuBtn" type="button" aria-controls="nav" aria-expanded="false">
+        Menu
+      </button>
+
+      <nav class="nav" id="nav" aria-label="Primary navigation">
+        <a href="#home" data-section="home">Home</a>
+        <a href="#profile" data-section="profile">Profile</a>
+        <a href="#skills" data-section="skills">Skills</a>
+        <a href="#evidence" data-section="evidence">Evidence</a>
+        <a href="#testing" data-section="testing">Testing</a>
+        <a href="#contact" data-section="contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <h1>Technical portfolio built for CS67 assessment evidence</h1>
+          <p>
+            This website is created as part of the CS67 Web Technologies coursework. It demonstrates semantic HTML
+            structure, responsive CSS layout, and JavaScript-based interaction. The design follows a professional
+            “technical resume” style so that an assessor can quickly evaluate learning outcomes without distraction.
+          </p>
+
+          <div class="chips" aria-label="Key outcomes">
+            <span class="chip">Semantic HTML</span>
+            <span class="chip">Responsive CSS</span>
+            <span class="chip">JavaScript DOM</span>
+            <span class="chip">Accessibility</span>
+            <span class="chip">Testing Evidence</span>
+          </div>
+
+          <div class="actions">
+            <a class="btn" href="#evidence">View Evidence</a>
+            <a class="btn ghost" href="#contact">Open Contact</a>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Coursework alignment summary">
+          <h2>Assessment Alignment</h2>
+          <p>
+            The portfolio is structured to support marking: clear sections, documented features, and simple interactive
+            elements that demonstrate core web development skills required in CS67.
+          </p>
+          <ul>
+            <li>Accordion: skills + evidence (JavaScript)</li>
+            <li>Scroll-spy navigation highlights section</li>
+            <li>Mobile navigation toggle</li>
+            <li>Client-side form validation</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PROFILE -->
+    <section id="profile" class="section">
+      <div class="wrap">
+        <h2>Profile</h2>
+        <p class="lead">
+          I am Sandeep MOLLETI. This portfolio demonstrates my practical understanding of core front-end web technologies.
+          The aim is to present work in a way that is academically clear, easy to evaluate, and suitable for viva discussion.
+          The website is intentionally framework-free to show direct competency in HTML, CSS, and JavaScript.
+        </p>
+
+        <div class="grid2">
+          <article class="card">
+            <h3>Design rationale</h3>
+            <p>
+              A technical resume theme is selected because it prioritises readability, structured information, and assessment
+              clarity. The interface uses restrained colour accents and consistent spacing to maintain a professional tone
+              suitable for academic submission.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>What the assessor should notice</h3>
+            <p>
+              Each section maps to a learning outcome: semantic structure, responsive layout, controlled interactivity,
+              validation, and testing evidence. Interactive features are intentionally simple but meaningful, which supports
+              reliability and clear explanation during the presentation.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS (Accordion) -->
+    <section id="skills" class="section soft">
+      <div class="wrap">
+        <h2>Skills (Accordion Demonstration)</h2>
+        <p class="lead">
+          This section uses an accordion component to demonstrate JavaScript event handling and DOM state changes.
+          Clicking each header expands or collapses the related content. The written content is coursework-focused and
+          describes how each skill area is applied in this portfolio.
+        </p>
+
+        <div class="accordion" id="skillsAcc">
+          <div class="acc-item">
+            <button class="acc-btn" type="button" aria-expanded="false">
+              HTML — semantics, structure, accessibility
+            </button>
+            <div class="acc-panel" hidden>
+              <p>
+                Semantic tags are used to structure the website, including header/navigation, main content sections, and a
+                footer. Proper heading hierarchy improves readability and supports assistive technology. Labels are applied
+                to form controls to ensure the interface remains accessible and academically appropriate.
+              </p>
+              <p>
+                This directly supports CS67 requirements related to correct document structure, accessibility principles,
+                and maintainable code organisation.
+              </p>
+            </div>
+          </div>
+
+          <div class="acc-item">
+            <button class="acc-btn" type="button" aria-expanded="false">
+              CSS — responsive layout and component consistency
+            </button>
+            <div class="acc-panel" hidden>
+              <p>
+                CSS is used to create a consistent visual system: reusable cards, buttons, spacing rules, and typographic
+                hierarchy. Grid and flexible layouts are used so the site adapts to mobile screens without breaking content
+                flow. The design remains readable and stable across different devices.
+              </p>
+              <p>
+                This is assessed through responsiveness, design coherence, and appropriate use of layout techniques.
+              </p>
+            </div>
+          </div>
+
+          <div class="acc-item">
+            <button class="acc-btn" type="button" aria-expanded="false">
+              JavaScript — interaction and user feedback
+            </button>
+            <div class="acc-panel" hidden>
+              <p>
+                JavaScript powers the accordion behaviour, mobile navigation toggling, scroll-spy highlighting, and contact
+                form validation. These features demonstrate event listeners, DOM selection, conditional logic, and dynamic UI
+                updates without reliance on external libraries.
+              </p>
+              <p>
+                The code is intentionally readable and structured so it can be explained clearly in a viva.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVIDENCE (Accordion + content) -->
+    <section id="evidence" class="section">
+      <div class="wrap">
+        <h2>Evidence of Coursework Requirements</h2>
+        <p class="lead">
+          This section provides assessable evidence aligned with the CS67 learning outcomes. Each evidence item explains what
+          was implemented, why it was implemented, and how it supports usability and academic marking. The accordion format
+          keeps content structured and readable.
+        </p>
+
+        <div class="accordion" id="evidenceAcc">
+          <div class="acc-item">
+            <button class="acc-btn" type="button" aria-expanded="false">
+              Evidence 1 — Semantic page layout and navigation
+            </button>
+            <div class="acc-panel" hidden>
+              <p>
+                The portfolio uses semantic HTML sections and navigation anchors so users can move between content areas
+                quickly. This supports both user experience and assessment review, since an assessor can locate evidence
+                without scrolling through unrelated content.
+              </p>
+              <p>
+                The navigation is paired with scroll-spy highlighting to show active position, demonstrating a practical
+                JavaScript enhancement that improves clarity during review.
+              </p>
+            </div>
+          </div>
+
+          <div class="acc-item">
+            <button class="acc-btn" type="button" aria-expanded="false">
+              Evidence 2 — Responsive component design (grid/cards)
+            </button>
+            <div class="acc-panel" hidden>
+              <p>
+                Content is displayed using a card-based layout that adapts from multi-column desktop views to stacked mobile
+                views using media queries. Spacing and typography rules are consistent, which supports readability and gives
+                the site a professional academic tone.
+              </p>
+              <p>
+                The responsive design is verified in the testing section using manual checks across multiple screen widths.
+              </p>
+            </div>
+          </div>
+
+          <div class="acc-item">
+            <button class="acc-btn" type="button" aria-expanded="false">
+              Evidence 3 — JavaScript interaction + validation
+            </button>
+            <div class="acc-panel" hidden>
+              <p>
+                JavaScript interaction is implemented in four areas: mobile menu toggle, accordion behaviour, scroll-spy
+                navigation, and contact form validation. Validation checks help ensure data quality by verifying name length,
+                email format, and message length before acceptance.
+              </p>
+              <p>
+                These are assessed as functional interaction features that demonstrate DOM manipulation and user feedback.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTING -->
+    <section id="testing" class="section soft">
+      <div class="wrap">
+        <h2>Testing Summary</h2>
+        <p class="lead">
+          This testing summary documents how the portfolio was checked during development. Testing focuses on responsive
+          behaviour, interaction correctness, and basic accessibility, which supports both reliability and viva justification.
+        </p>
+
+        <div class="grid3">
+          <article class="card">
+            <h3>Responsiveness checks</h3>
+            <p>
+              The website was tested using browser developer tools at multiple widths (desktop, tablet, and mobile). The
+              layout was verified to ensure cards stack correctly, text remains readable, and navigation stays accessible
+              without horizontal scrolling.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>JavaScript behaviour</h3>
+            <p>
+              Accordion panels were tested for correct expand/collapse behaviour, ensuring only the intended panel opens at a
+              time. The scroll-spy navigation highlight was verified while scrolling. The mobile menu toggle was tested for
+              open/close stability across device sizes.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Form validation</h3>
+            <p>
+              The form was tested with empty fields, invalid emails, and short messages to confirm error messages display
+              clearly. Valid entries were tested to confirm the success message appears and the form resets for demo purposes.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="wrap">
+        <h2>Contact (Validation Demonstration)</h2>
+        <p class="lead">
+          This form is included for coursework demonstration. It validates input on the client-side and provides clear
+          feedback messages. It does not submit data to a server.
+        </p>
+
+        <form class="form" id="form" novalidate>
+          <div class="row2">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" type="text" autocomplete="name" />
+              <small class="err" id="nameErr"></small>
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" type="email" autocomplete="email" />
+              <small class="err" id="emailErr"></small>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="msg">Message</label>
+            <textarea id="msg" rows="5"></textarea>
+            <small class="err" id="msgErr"></small>
+          </div>
+
+          <button class="btn" type="submit">Validate</button>
+          <p class="status" id="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-row">
+      <span>© Sandeep MOLLETI | CS67 Web Technologies</span>
+      <a href="#home">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
